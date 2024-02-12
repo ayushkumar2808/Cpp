@@ -4,7 +4,8 @@
     "iostream": "cpp",
     "map": "cpp",
     "algorithm": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "__tree": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
