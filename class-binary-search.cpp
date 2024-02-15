@@ -4,28 +4,25 @@ using namespace std;
 int main(){
   int arr[8]={1,2,3,4,5,6,7,8};
   int size = sizeof(arr)/sizeof(arr[0]);
-  int t;
-  cin>>t;
+  int t=4;
 
-  int start = 0;
-  int end = size-1;
-
-  while (start<=end)
-  {
-    int mid = start+(end-start)/2;
-
+  int low = 0;
+  int high = size-1;
+  string ans="not";
+  while(low<=high){
+    int mid = low+(high-low)/2;
     if(arr[mid]==t){
-      cout<<"present at index: "<<mid<<endl;
-      return 0;
+      ans="present";
+      break;
     }
-    else if(arr[mid]<t){
-      start = mid+1;
+    else if(arr[mid]>t){
+      high=mid-1;
     }
     else{
-      end = mid-1;
+      low=mid+1;
     }
   }
-  cout<<"not present";
+  cout<<ans;
   
   return 0;
 }
