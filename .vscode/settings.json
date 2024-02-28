@@ -6,7 +6,10 @@
     "algorithm": "cpp",
     "ostream": "cpp",
     "__tree": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "__locale": "cpp",
+    "regex": "cpp",
+    "string_view": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
