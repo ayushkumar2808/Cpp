@@ -60,12 +60,21 @@ Node* convertArr2LL(int arr[],int size){
   return head;
 }
 
+Node* insertAtFirst(int target, Node* head){
+  Node* newNode = new Node(target,nullptr);
+
+  newNode->next = head;
+  head = newNode;
+  return head;
+}
+
 int main(){
   int arr[]={1,3,22,3,5,6};
   int size = sizeof(arr)/sizeof(arr[0]);
   Node * head = convertArr2LL(arr,size);
-
-  Node* temp = head;
+  Node* head11 = insertAtFirst(34,head);
+   Node* head1 = insertAtFirst(344545,head11);
+  Node* temp = head1;
   while(temp){
     cout<<temp->data<<endl;
     temp=temp->next;
