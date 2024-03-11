@@ -9,7 +9,8 @@
     "string": "cpp",
     "__locale": "cpp",
     "regex": "cpp",
-    "string_view": "cpp"
+    "string_view": "cpp",
+    "__node_handle": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
