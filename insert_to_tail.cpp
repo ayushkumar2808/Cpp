@@ -34,7 +34,7 @@ void addToTail(int data, Node *&head)
   temp = newNode;
 }
 
-void deleteNode(int data,)
+
 void AddToHead(int data, Node *&head)
 {
   Node *NEWnODE = new Node(data);
