@@ -44,6 +44,18 @@ int diameterOfTree(Node *root){
   return max(currDiameter, max(leftDiameter, rightDiameter));
 }
 
+int maxpathSum(Node *root, int &res){
+  if(root == NULL){
+    return 0;
+  }
+  int lh = maxpathSum(root->left, res);
+  int rh = maxpathSum(root->right, res);
+  int temp = max(max(lh, rh) + root->data, root->data);
+  int ans = max(temp, lh + rh + root->data);
+  res = max(res, ans);
+  return temp;
+}
+
 Node* buildTree(int preOrder[], int inOrder[], int start, int end){
   if(start > end){
     return NULL;
@@ -78,5 +90,8 @@ int main(){
   preOrderr(root);
   cout<<endl;
   cout<<diameterOfTree(root);
+  cout<<endl;
+  int res = INT_MIN;
+  maxpathSum(root, res);
   return 0;
 }
