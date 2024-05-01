@@ -11,7 +11,12 @@
     "regex": "cpp",
     "string_view": "cpp",
     "__node_handle": "cpp",
-    "ios": "cpp"
+    "ios": "cpp",
+    "queue": "cpp",
+    "graph-numbr-fo-islands": "c",
+    "__split_buffer": "c",
+    "deque": "c",
+    "list": "c"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
